@@ -22,5 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# temporary files
 now-review-app.json
 now-staging-app.json
+now-production-app.json
