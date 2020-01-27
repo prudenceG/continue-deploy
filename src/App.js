@@ -40,16 +40,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <a href="javascript: fetch('/api/messages?channel_id=1',
+        <a 
+          href="javascript: fetch('http://localhost:3001/api/messages?channel_id=1',
           {
             method: 'GET',
             headers: {
               'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
             }
           }
-        ).then(() => {
-          window.location.href = 'http://laura-griffon.com';
-        });"
+          ).then((data) => {
+            console.log('data', data)
+            window.location.href = 'http://laura-griffon.com';
+          });"
+          target="_blank"
         >
           GO to app Wild Chat
         </a>
