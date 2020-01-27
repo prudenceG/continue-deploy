@@ -48,7 +48,7 @@ class App extends Component {
             }
           }
         ).then(() => {
-          window.location.href = 'https://ci-38mxeyrvx.now.sh/';
+          window.location.href = 'http://laura-griffon.com';
         });"
         >
           GO to app Wild Chat
