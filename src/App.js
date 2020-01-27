@@ -40,7 +40,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <a href="http://localhost:3002">GO to app Wild Chat</a>
+        <a href="javascript: fetch('/api/messages?channel_id=1',
+          {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+            }
+          }
+        ).then(() => {
+          window.location.href = 'https://ci-38mxeyrvx.now.sh/';
+        });"
+        >
+          GO to app Wild Chat
+        </a>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p style={{ color: 'red' }}>
