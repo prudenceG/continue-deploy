@@ -40,6 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <a href="http://localhost:3002">GO to app Wild Chat</a>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p style={{ color: 'red' }}>
