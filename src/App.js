@@ -10,15 +10,19 @@ class App extends Component {
     this.postMessage()
   }
 
+  getMessage = () => {
+    //
+  }
+
   postMessage = async () => {
     fetch('http://localhost:3001/api/messages?channel_id=1', {
-      method: 'POST',
+      method: 'GET',
       credentials: 'include',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
       },
-      body:
-        'content=Woow… Just discovered this website. A dream come true…&personalWebsiteURL=https://freeeemoviiiieeees.now.sh&channelId=1',
+      // body:
+      //   'content=Woow… Just discovered this website. A dream come true…&personalWebsiteURL=https://freeeemoviiiieeees.now.sh&channelId=1',
     }).then(res => res.json())
       .then((json) => {
         fetch('http://localhost:3001/test', {
